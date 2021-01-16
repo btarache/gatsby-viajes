@@ -1,0 +1,27 @@
+[
+    {
+      "img": "../assets/images/trip-2.jpg",
+      "alt": "Tian Tan Buddha",
+      "name": "Tian Tan Buddha",
+      "button": "View Destination"
+    },
+    {
+      "img": "../assets/images/trip-1.jpg",
+      "alt": "Paradise",
+      "name": "Paradise",
+      "button": "View Destination"
+    },
+    {
+      "img": "../assets/images/trip-3.jpg",
+      "alt": "The big city",
+      "name": "The big city",
+      "button": "View Destination"
+    },
+    {
+      "img": "../assets/images/trip-4.jpg",
+      "alt": "Japon milenario",
+      "name": "Japon milenario",
+      "button": "View Destination"
+    }
+  ]
+
