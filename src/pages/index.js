@@ -4,6 +4,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Testimonials from "../components/Testimonials"
 import Trips from "../components/Trips"
+import Stats from '../components/Stats'
 
 const IndexPage = () => (
   <Layout>
@@ -11,6 +12,8 @@ const IndexPage = () => (
     <Hero />
     <Trips heading="Our Favorite Destinations" />
     <Testimonials />
+    <Stats />
+
   </Layout>
 )
 export default IndexPage;

@@ -35,13 +35,7 @@ const Testimonials = () => {
             <ContentWrapper>
                 <ColumnOne>
                     <Testimonial>
-                        <IoMdCheckmarkCircleOutline 
-                            css={`
-                            color: #3fffa8;
-                            font-size: 2rem;
-                            margin-bottom: 1rem;
-                        `}
-                        />
+                        <IoMdCheckmarkCircleOutline css={`color: #3fffa8; font-size: 2rem; margin-bottom: 1rem;`}/>
                         <h3>Petra Perez</h3>
                         <p>"The greatest experience of my life!"
                             Lorem ipsum dolor sit, amet consectetur
