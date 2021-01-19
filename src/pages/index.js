@@ -6,7 +6,7 @@ import Testimonials from "../components/Testimonials"
 import Trips from "../components/Trips"
 import Stats from '../components/Stats'
 import Email from "../components/Email"
-import Footer from "../components/footer"
+
 
 const IndexPage = () => (
   <Layout>
@@ -16,8 +16,6 @@ const IndexPage = () => (
     <Testimonials />
     <Stats />
     <Email />
-    <Footer />
-
   </Layout>
 )
 export default IndexPage;
