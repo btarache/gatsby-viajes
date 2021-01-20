@@ -1,11 +1,18 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import styled from 'styled-components'
 import Img from 'gatsby-image'
 import { IoMdCheckmarkCircleOutline } from 'react-icons/io'
 import { FaRegLightbulb } from 'react-icons/fa'
 import { useStaticQuery, graphql } from 'gatsby'
+import './styles/Iconos.css'
+
+import Aos from 'aos'
+import "aos/dist/aos.css"
 
 const Testimonials = () => {
+    useEffect(() => {
+		Aos.init({ duration: 2000 });
+	}, []);
     const data = useStaticQuery(graphql`
         query  {
             allFile(filter: {ext: {regex: "/(jpg)|(png)|(jpeg)/"},
@@ -30,12 +37,12 @@ const Testimonials = () => {
                 Testimonials
             </TopLine>
             <Description>
-                What PEople are Saying
+                What People are Saying
             </Description>
             <ContentWrapper>
                 <ColumnOne>
-                    <Testimonial>
-                        <IoMdCheckmarkCircleOutline css={`color: #3fffa8; font-size: 2rem; margin-bottom: 1rem;`}/>
+                    <Testimonial data-aos="fade-right">
+                        <IoMdCheckmarkCircleOutline className="icono icono-uno" css={`color: #3fffa8; font-size: 2rem; margin-bottom: 1rem;`}/>
                         <h3>Petra Perez</h3>
                         <p>"The greatest experience of my life!"
                             Lorem ipsum dolor sit, amet consectetur
@@ -43,8 +50,8 @@ const Testimonials = () => {
                               exercitationem.
                         </p>
                     </Testimonial>
-                    <Testimonial>
-                        <FaRegLightbulb 
+                    <Testimonial data-aos="fade-right">
+                        <FaRegLightbulb className="icono icono-dos"
                             css={`
                                 color: #f9b19b;
                                 font-size: 2rem;
@@ -59,7 +66,7 @@ const Testimonials = () => {
                         </p>
                     </Testimonial>
                 </ColumnOne>
-                <ColumnTwo>
+                <ColumnTwo data-aos="fade-up">
                     {data.allFile.edges.map((image, key) => (
                         <Images key={key} fluid={image.node.childImageSharp.fluid} />
                     ))}

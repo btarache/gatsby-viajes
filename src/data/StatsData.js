@@ -2,11 +2,12 @@ import React from 'react'
 import { GiEarthAmerica } from 'react-icons/gi'
 import { MdAirplanemodeActive, MdTimer } from 'react-icons/md'
 import { FaMoneyCheck } from 'react-icons/fa'
+import '../components/styles/Iconos.css'
 
 export const StatsData = [
     {
         icon: ( 
-            <GiEarthAmerica 
+            <GiEarthAmerica className="icono-uno"
                 css={`
                     color: #047bf1;
                 `}
@@ -17,7 +18,7 @@ export const StatsData = [
     },
     {
         icon: ( 
-            <MdAirplanemodeActive
+            <MdAirplanemodeActive className="icono-dos"
                 css={`
                     color: #047bf1;
                 `} 
@@ -27,12 +28,12 @@ export const StatsData = [
         desc: "Travel around the wolrd...",
     },
     {
-        icon: ( <MdTimer css={`color: #047bf1;`} /> ),
+        icon: ( <MdTimer className="icono-uno" css={`color: #047bf1;`} /> ),
         title: "VIP destinations",
         desc: "Luxurious places...",
     },
     {
-        icon: ( <FaMoneyCheck css={`color: #047bf1;`} /> ),
+        icon: ( <FaMoneyCheck className="icono-dos" css={`color: #047bf1;`} /> ),
         title: "Over 100 destinations",
         desc: "Travel around the wolrd...",
     },

@@ -66,6 +66,7 @@ const StatsBox = styled.div`
 const Icon = styled.div`
     font-size: 3rem;
     margin-bottom: 1rem;
+    text-align: center;
 `;
 
 const Title = styled.p`
@@ -74,5 +75,6 @@ const Title = styled.p`
 `;
 
 const Description = styled.p`
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+    text-align: center;
 `;

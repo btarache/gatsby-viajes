@@ -1,12 +1,19 @@
-import React from 'react'
+import React, { useEffect }  from 'react'
 import styled from 'styled-components'
 import EmailBg from '../assets/images/emailbg.jpg'
 import { Button } from './Button'
 
+
+import Aos from 'aos'
+import "aos/dist/aos.css"
+
 const Email = () => {
+    useEffect(() => {
+		Aos.init({ duration: 2000 });
+	}, []);
     return (
         <EmailContainer>
-            <EmailContent>
+            <EmailContent data-aos="fade-up">
                 <h1>Get Access to Exclusive Offers</h1>
                 <p>Sign upfor your newsletter below to get $100 off your first trip!</p>
                 <form action="#">
